@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Indubitably</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka One"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/1.0.10/purify.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1 class="logo">indubitably</h1>
+        <form >
+            <div class="container">
+              <div class="column">
+                <label htmlFor="description-input">description</label>
+                <input
+                  id="description-input"
+                  name="description"
+                  type="text"
+                />
+              </div>
+              <div class="column">
+                <label >location</label>
+                <input
+                  id="location-input"
+                  name="location"
+                  type="text"
+                />
+              </div>
+              <button type="submit" id="btn-submit">
+                Search for Gigs
+              </button>
+            </div>
+            <hr />
+          </form>
+      </header>
+      <div class="container results">
+        <div class="column" id="sidebar">
+        </div>
+        <div class="column" id="main-content">
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="index.js"></script>
+</html>
